@@ -1,4 +1,23 @@
-	<div class="container news">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/style.css">
+	<title>News</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>
+			<?php
+			include 'header.php';
+			?>
+		</header>
+		<div class="main">
+			<div class="container news">
 				<h3>Tin Tức Mới CSE</h3>
 				<ul>
 					<li>
@@ -29,5 +48,29 @@
 							<p>Trong tổng số 13 đồ án tham gia giải thưởng Loa Thành năm nay, Trường Đại học Thủy lợi có 8 đồ án đạt giải. Đồ án "Nghiên cứu mô hình dự báo lũ sông Kone" của Trần Thị Tuyết 56G do PGS.TS Ngô Lê An...</p>
 						</div>
 					</li>
+					<li>
+						<img src="images/news/new4.jpg" alt="Ảnh DEMO">
+						<div>
+							<h4><a href="">Đại học Thủy lợi giành 8 giải thưởng Đồ án xuất sắc - Giải Loa thành năm 2019</a></h4>
+							<p>Trong tổng số 13 đồ án tham gia giải thưởng Loa Thành năm nay, Trường Đại học Thủy lợi có 8 đồ án đạt giải. Đồ án "Nghiên cứu mô hình dự báo lũ sông Kone" của Trần Thị Tuyết 56G do PGS.TS Ngô Lê An...</p>
+						</div>
+					</li>
+					<li>
+						<img src="images/news/new4.jpg" alt="Ảnh DEMO">
+						<div>
+							<h4><a href="">Đại học Thủy lợi giành 8 giải thưởng Đồ án xuất sắc - Giải Loa thành năm 2019</a></h4>
+							<p>Trong tổng số 13 đồ án tham gia giải thưởng Loa Thành năm nay, Trường Đại học Thủy lợi có 8 đồ án đạt giải. Đồ án "Nghiên cứu mô hình dự báo lũ sông Kone" của Trần Thị Tuyết 56G do PGS.TS Ngô Lê An...</p>
+						</div>
+					</li>
 				</ul>
 			</div>
+		</div>
+		<footer>
+			<?php
+			include 'footer.php';
+			?>
+		</footer>
+	</div>
+</body>
+
+</html>
