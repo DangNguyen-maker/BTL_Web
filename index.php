@@ -11,158 +11,53 @@
     <title>document</title>
 </head>
 <body>
-	<div class="wrapper">
+<div class="wrapper">
 		<header>
-			<div class="top">
-					<ul></ul>
-					<ul>
-						<li><a href="login.php">Login</a></li>
-						<li><a href="#">Register</a></li>
-						<li>
-							<form>
-								<svg class="search rtl-flip" width="20px" height="20px" viewBox="0 0 20 20"
-									version="1.1" xmlns="http://www.w3.org/2000/svg"
-									xmlns:xlink="http://www.w3.org/1999/xlink">
-									<g stroke="none" stroke-width="1" fill-rule="evenodd">
-										<g>
-											<path
-												d="M8.5025,15 C4.9225,15 2.0025,12.08 2.0025,8.5 C2.0025,4.92 4.9225,2 8.5025,2 C12.0825,2 15.0025,4.92 15.0025,8.5 C15.0025,12.08 12.0825,15 8.5025,15 L8.5025,15 Z M8.5025,3 C5.4625,3 3.0025,5.46 3.0025,8.5 C3.0025,11.54 5.4625,14 8.5025,14 C11.5425,14 14.0025,11.54 14.0025,8.5 C14.0025,5.46 11.5425,3 8.5025,3 L8.5025,3 Z M17.5025,18 C17.3825,18 17.2425,17.96 17.1425,17.86 L13.6425,14.36 C13.4625,14.16 13.4625,13.84 13.6425,13.64 C13.8425,13.46 14.1625,13.46 14.3625,13.64 L17.8625,17.14 C18.0425,17.34 18.0425,17.66 17.8625,17.86 C17.7625,17.96 17.6225,18 17.5025,18 L17.5025,18 Z"
-												id="z"></path>
-										</g>
-									</g>
-								</svg>
-								<input type="text" name="txtSearch" placeholder="Tìm Kiếm">
-							</form>
-						</li>
-					</ul>
-				</div>
-				<div class="logo">
-					<a href="sinhvien.php">
-						<img src="images/logo.jpg" alt="logoCSE">
-					</a>
-				</div>
-				<div class="menu">
-					<ul>
-						<li><a href="sinhvien.php">TRANG CHỦ</a></li>
-						<li>
-							GIỚI THIỆU
-							<ul class="show">
-								<li><a href="#">Logo Khoa CNTT</a></li>
-								<li><a href="#">Lời chào mừng</a></li>
-								<li><a href="#">Tổ chức</a></li>
-								<li><a href="#">Hợp tác liên kết</a></li>
-							</ul>
-						</li>
-						<li>KẾ HOẠCH GIẢNG DẠY
-							<ul class="show">
-								<li><a href="#">Các đề tài , dự án</a></li>
-								<li><a href="#">Thông tin seminar</a></li>
-								<li><a href="#">Công trình công bố</a></li>
-								<li><a href="#">Các phòng thí nghiệm</a></li>
-							</ul>
-						</li>
-						<li>LỊCH TRÌNH GIẢNG DẠY
-							<ul class="show">
-								<li><a href="#">Thông báo</a></li>
-								<li><a href="#">TB đào tạo</a></li>
-								<li><a href="#">Nghiên cứu khoa học</a></li>
-								<li><a href="#">Tuyển dụng</a></li>
-								<li><a href="#">Học bổng</a></li>
-								<li><a href="#">Thông báo khác</a></li>
-							</ul>
-						</li>
-						<li>ĐÀO TẠO
-							<ul class="show">
-								<li><a href="#">Đào tạo đại học</a></li>
-								<li><a href="#">Đào tạo sau đại học</a></li>
-								<li><a href="#">Chuẩn đầu ra</a></li>
-								<li><a href="#">Định hướng ngành nghề</a></li>
-								<li><a href="#">Mô hình đào tạo</a></li>
-								<li><a href="SVDeCuongMonHoc.php">Đề cương môn học</a></li>
-							</ul>
-						</li>
-						<li>BỘ MÔN - TRUNG TÂM
-							<ul class="show">
-								<li><a href="#">Công nghệ phần mềm</a></li>
-								<li><a href="#">Hệ thống thông tin</a></li>
-								<li><a href="#">Khoa học máy tính</a></li>
-								<li><a href="#">Kỹ thuật máy tính và mạng</a></li>
-								<li><a href="#">Toán học</a></li>
-								<li><a href="#">Tin học máy tính toán</a></li>
-								<li><a href="#">Trung tâm tin học</a></li>
-							</ul>
-						</li>
-						<li>SINH VIÊN
-							<ul class="show">
-								<li><a href="#">Tài liệu sinh viên</a></li>
-								<li><a href="#">Tổ tư vấn học tập</a></li>
-								<li><a href="#">Biểu mẫu ĐATN</a></li>
-								<li><a href="#">Luận văn tôt nghiệp</a></li>
-							</ul>
-						</li>
-						<li>TIN TỨC
-							<ul class="show">
-								<li><a href="#">Tin tức</a></li>
-								<li><a href="#">CSE trên báo</a></li>
-							</ul>
-						</li>
-						
-						<li>LIÊN HỆ
-						</li>
-
-					</ul>
-				</div>
-				<hr width="100%">
-		
+			<?php
+			include 'header.php';
+			?>
 		</header>
 		<div class="main">
-			<!-- main -->
-			<?php
-				include 'news.php';
-			?>
-
-
-
-
-
-		<!-- end-main -->
-		</div>
-		
-		<footer>
-			
-			<div class="nav-footer">
+			<div class="container news">
+				<h3>Tin Tức Mới CSE</h3>
 				<ul>
-					<li><a href="#">Giới thiệu</a></li>
-					<li><a href="#">Logo của Khoa CNTT</a></li>
-					<li><a href="#">Lời chào mừng</a></li>
-					<li><a href="#">Tổ chức</a></li>
-					<li><a href="#">Hợp tác liên kết</a></li>
-				</ul>
-				<ul>
-					<li><a href="#">Đào tạo</a></li>
-					<li><a href="#">Mô hình đào tạo</a></li>
-					<li><a href="#">Đào tạo đại học</a></li>
-					<li><a href="#">Định hướng ngành nghề</a></li>
-					<li><a href="#">Đào tạo sau đại học</a></li>
-				</ul>
-				<ul>
-					<li><a href="#">Nghiên cứu khoa học</a></li>
-					<li><a href="#">Thông tin seminar</a></li>
-					<li><a href="#">Các đề tài, dự án</a></li>
-					<li><a href="#">Công trình công bố</a></li>
-					<li><a href="#">Các phòng thí nghiệm</a></li>
-				</ul>
-				<ul>
-					<li><a href="#">Công nghệ phần mềm</a></li>
-					<li><a href="#">Hệ thống thông tin</a></li>
-					<li><a href="#">Khoa học máy tính</a></li>
-					<li><a href="#">Kỹ thuật máy tính và mạng</a></li>
-					<li><a href="#">Toán học</a></li>
-					<li><a href="#">Trung tâm tin học</a></li>
+					<li>
+						<img src="images/news/new1.jpg" alt="Ảnh DEMO">
+						<div>
+							<h4><a href="">Công bố quyết định của Hiệu trưởng Bổ nhiệm viên chức quản lý cấp bộ môn khoa CNTT</a></h4>
+							<p>Trong những ngày đầu tháng 1 năm 2019, thừa ủy quyền của Hiệu trưởng trường Đại học Thủy Lợi, Đảng ủy - Ban Chủ nhiệm khoa Công nghệ thông tin đã tiến hành trao quyết định bổ nhiệm chức vụ Trưởng Bộ môn Toán học cho TS Nguyễn Hữu Thọ, Phó trưởng Bộ môn Toán học cho TS Đỗ Lân, Phó trưởng Bộ môn Hệ thống thông tin đối với TS Trần Mạnh Tuấn, Khoa Công nghệ thông tin.</p>
+						</div>
+					</li>
+					<li>
+						<img src="images/news/new2.jpg" alt="Ảnh DEMO">
+						<div>
+							<h4><a href="">Sinh viên Khoa CNTT giao lưu với công ty Qualica Nhật Bản</a></h4>
+							<p>(TLU) – Chiều ngày 23/04/2018, tại Trường Đại học Thủy lợi diễn ra buổi giao lưu giữa sinh viên Khoa CNTT với các lãnh đạo và nhân viên của công ty Qualica đang làm việc tại Nhật Bản.</p>
+						</div>
+					</li>
+					<li>
+						<img src="images/news/new3.jpg" alt="Ảnh DEMO">
+						<div>
+							<h4><a href="">ĐH Thủy lợi dự kiến mở một số ngành “hot” trong những năm tới đây</a></h4>
+							<p>Tới đây, Trường Đại học Thủy lợi dự kiến sẽ đào tạo một số ngành học đang có nhu cầu lớn trong xã hội nhằm cung cấp nguồn nhân lực chất lượng tốt dựa trên những điều kiện đảm bảo đáp ứng yêu cầu về...</p>
+						</div>
+					</li>
+					<li>
+						<img src="images/news/new4.jpg" alt="Ảnh DEMO">
+						<div>
+							<h4><a href="">Đại học Thủy lợi giành 8 giải thưởng Đồ án xuất sắc - Giải Loa thành năm 2019</a></h4>
+							<p>Trong tổng số 13 đồ án tham gia giải thưởng Loa Thành năm nay, Trường Đại học Thủy lợi có 8 đồ án đạt giải. Đồ án "Nghiên cứu mô hình dự báo lũ sông Kone" của Trần Thị Tuyết 56G do PGS.TS Ngô Lê An...</p>
+						</div>
+					</li>
 				</ul>
 			</div>
-			
-		</footer>	
+		</div>
+
+		<footer>
+			<?php
+			include 'footer.php';
+			?>
+		</footer>
 	</div>
 </body>
 </html>
