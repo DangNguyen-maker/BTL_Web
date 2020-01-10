@@ -1,0 +1,104 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+html,body,.wrapper{
+    width: 100%;
+    height: 100%;
+}
+.wrapper .login{
+    width: 370px;
+    height: auto;
+   
+    margin: auto;
+    margin-top: 200px;
+
+}
+.wrapper .login h1 a img{
+    height: 80px;
+
+    width: auto;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.wrapper .login form{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 5px #ddd;
+    border-radius: 5px;
+}
+.wrapper .login form ul{
+    width: 100%;
+    height: 100%;
+   
+}
+.wrapper .login form ul li{
+    list-style-type: none;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    border: 1px solid #ddd;
+
+}
+.wrapper .login form ul li svg{
+    margin: 20px;
+}
+.wrapper .login form ul li input{
+    flex-grow: 1;
+    border: none;
+    font-size: 16px;
+    color: #333;
+    padding: 10px;
+}
+.wrapper .login form ul li:nth-child(3) input{
+   margin-left: 10px;
+   margin-right: 10px;
+   margin-top: 20px;
+   background-color: #1b7edf;
+   color: #fff;
+   border-radius: 3px;
+}
+.wrapper .login form ul li:nth-child(3){
+    border-bottom: 0px;
+}
+.wrapper .login form ul li:nth-child(4){
+    border-top: 0px;
+    height: 40px;
+}
+.wrapper .login form ul li a{
+    margin: auto;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #1b7edf;
+}
+.wrapper .login div{
+    margin: 50px;
+    margin-top: 20px;
+}
+.wrapper .login div p{
+    font-size: 16px;
+    color: #333;
+}
+.wrapper .login div p a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #1b7edf;
+
+}
+::-webkit-input-placeholder { /* Chrome */
+    color: #666;
+    }
+:-ms-input-placeholder { /* IE 10+ */
+    color: #666;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+    color: #666;
+    /* opacity: 1; */
+    }
+    :-moz-placeholder { /* Firefox 4 - 18 */
+    color: #666;
+    /* opacity: 1; */
+    }

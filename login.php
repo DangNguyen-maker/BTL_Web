@@ -1,37 +1,33 @@
 <?php
     session_start();
     header('Content-Type: text/html; charset=UTF-8');
+    include 'connect.php';
     if (isset($_POST['sbLogin'])) {
-        if (empty($_POST['textName']) || empty($_POST['textPass'])) {
-           echo "<script type='text/javascript'>alert('Ban can nhap du thong tin');</script>";
+      if (empty($_POST['textName']) || empty($_POST['textPass'])) {
+        $message = "Vui Long Nhap Day Du Thong Tin";
+        echo "<script type='text/javascript'>alert('$message');</script>";
+      }
+      else{
+        $sql = "SELECT * FROM users WHERE USERNAME = :USERNAME AND PASSWORD = :PASSWORD";
+        $statement = $db->prepare($sql);
+        $statement -> execute(
+            array(
+                'USERNAME' => $_POST['textName'],
+                'PASSWORD' => $_POST["textPass"]
+
+            )
+        );
+        $count = $statement -> rowCount();
+        if ($count>0 ) {
+            $_SESSION["USERNAME"] = $_POST["textName"];
+            header("location: admin.php");
         }
         else{
-            include('connect.php');
-            $database = mysqli_select_db($conn,"btl_web");
-            $username = $_POST['textName'];
-            $password = $_POST['textPass'];
-            $sql = "SELECT * FROM account WHERE user='$username' AND PASSSWORD='$password'";
-            $result = $conn->query($sql);
-            if (mysqli_num_rows($result) == 0) {
-               echo "<script type='text/javascript'>alert('Ten Dang Nhap Khong Ton Tai');</script>"; 
-            }
-            else{
-                $_SESSION['user'] = $username;
-                $level;
-                if (mysqli_num_rows($result) > 0) {
-                    while($row = mysqli_fetch_assoc($result)) {
-                        $level=$row['level'];
-                    }
-                }
-                if($level==1){
-                    header("location: quanly.php");
-                }else{
-                    echo "string";
-                }
-               
-            }
+           $message = "Tai Khoan Hoac Mat Khau Khong Chinh Xac";
+            echo "<script type='text/javascript'>alert('$message');</script>"; 
         }
-}
+      }
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -47,7 +43,7 @@
 <body>
     <div class="wrapper">
         <div class="login">
-            <h1><a href="tl.php"><img src="images/login.png" alt=""></a></h1>
+            <h1><a href="index.php"><img src="images/login.png" alt=""></a></h1>
             <form action="" method="post">
                 <ul>
                     <li>

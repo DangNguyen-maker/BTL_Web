@@ -1,5 +1,5 @@
 <?php
-include 'connect.php';
+	include 'connect.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,24 +21,19 @@ include 'connect.php';
 		</header>
 		<div class="main">
 			<div class="container news">
-				<h3>Tin Tức Mới CSE</h3>
-				<ul>
-					<?php
-					$sql = "SELECT * FROM news";
+				<?php
+					$news = $_GET["news"];
+					$sql = "SELECT * FROM news WHERE newId = $news";
 					$query = $db->prepare($sql);
 					foreach ($db->query($sql) as $row) {
-					?>
-						<li>
-							<img src="images/news/<?php echo $row['newImage'] ?>" alt="Ảnh">
-							<div>
-								<h4><a href="newsDetail.php?news=<?php echo $row['newId'] ?>"><?php echo $row['newTitle'] ?></a></h4>
-								<p><?php echo $row['newContent'] ?></p>
-							</div>
-						</li>
+				?>
+				<h3><?php echo $row['newTitle'] ?></h3>
+						<div style="font-size: 20px; margin-top: 20px">
+							<?php echo $row['newContent'] ?>
+						</div>
 					<?php
-					}
+						}
 					?>
-				</ul>
 			</div>
 		</div>
 		<footer>
